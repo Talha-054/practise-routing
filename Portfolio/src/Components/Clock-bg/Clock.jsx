@@ -22,7 +22,7 @@ function Clock({identity}) {
 
     // useEffect(()=>{
     if(layout.current){
-        layout.current.style.backgroundImage = `url(/assets/clock-${identity}-${code}.png)`;
+        layout.current.style.backgroundImage = `url(/assets/clock${identity}-${code}.png)`;
     }
     console.log("done")
     console.log(identity)
