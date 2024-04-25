@@ -1,0 +1,205 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.header-container {
+    top: 1rem;
+    height: 10vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+.header {
+    
+    height: 95%;
+    width: 90%;
+    position: relative;
+    display: flex;
+    box-shadow: 0px 2.5px 10px whitesmoke;
+    border-radius: 10px;
+}
+
+.options {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.member {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+}
+
+ul li {
+    list-style: none;
+    padding: 1vw;
+}
+
+.navlink{
+    text-decoration: none !important;
+    color: whitesmoke;
+    
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 1.5vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.login-button {
+    margin: 0.5vw;
+    padding: 1vw;
+    aspect-ratio: 4/1;
+    border-radius: 25px;
+    background: none;
+    border: none;
+    color: whitesmoke;
+    box-shadow: 5px 0px 10px whitesmoke;
+}
+
+.sign-button {
+    margin: 0.5vw;
+    padding: 1vw;
+    aspect-ratio: 4/1;
+    border-radius: 25px;
+    background: none;
+    border: none;
+    color: whitesmoke;
+    box-shadow: -5px 0px 10px whitesmoke;
+}
+
+
+ul li:hover{
+    cursor: pointer;
+}
+
+
+.login-button:hover,
+.sign-button:hover{
+    cursor: pointer;
+    font-weight: bolder;
+}
+    
+
+
+
+.red {
+    color: red;
+}
+
+
+
+@media (max-width: 400px) {
+    ul {
+        font-size: 10px;
+    }
+
+    .login-button,
+    .sign-button {
+        padding: 1.5vw;
+    }
+
+    .member {
+        width: 40%;
+    }
+    .options {
+        width: 60%;
+    }
+
+   
+    
+}
+
+@media (min-width:401px) and (max-width:1100px) {
+    ul {
+        font-size: 14px;
+    }
+
+    .login-button,
+    .sign-button {
+        padding: 2vw;
+    }
+
+   
+}
+
+
+.light {
+    width: 5%;
+    aspect-ratio: 1/1;
+    background-color: rgb(21, 255, 0);
+    margin: 1vw;
+    border-radius: 50%;
+    animation: green 2s linear infinite ;
+}
+
+.light2 {
+    width: 5%;
+    aspect-ratio: 1/1;
+    background-color: red;
+    margin: 1vw;
+    border-radius: 50%;
+    animation: red 2s linear infinite ;
+}
+
+
+
+@keyframes green {
+    0%{
+        box-shadow: 0px 0px 5px rgb(0, 255, 0);
+    }
+
+    25%{
+        box-shadow: 0px 0px 10px rgb(0, 255, 0);
+    }
+    50%{
+        box-shadow: 0px 0px 30px rgb(0, 255, 0);
+    }
+    75%{
+        box-shadow: 0px 0px 10px rgb(0, 255, 0);
+    }
+    100%{
+        box-shadow: 0px 0px 5px rgb(0, 255, 0);
+    }
+}
+
+
+@keyframes red {
+    0%{
+        box-shadow: 0px 0px 5px red;
+    }
+
+    25%{
+        box-shadow: 0px 0px 10px red;
+    }
+    50%{
+        box-shadow: 0px 0px 30px red;
+    }
+    75%{
+        box-shadow: 0px 0px 10px red;
+    }
+    100%{
+        box-shadow: 0px 0px 5px red;
+    }
+}
+

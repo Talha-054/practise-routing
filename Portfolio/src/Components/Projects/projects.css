@@ -1,0 +1,68 @@
+.project-area {
+    height: 60vh;
+    margin-top: 5vh;
+    box-shadow: 0px -5px 10px whitesmoke;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+
+
+.p-container {
+    width: 15%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.p1 {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-image: url("assets/doodle..jpeg");
+    background-size: 100% 100%;
+    transition: all 200ms linear 50ms;
+}
+
+.p2 {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-image: url("assets/flappy.png");
+    background-size: 100% 100%;
+    transition: all 200ms linear 50ms;
+}
+
+.p3 {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-image: url("assets/currency.png");
+    background-size: 100% 100%;
+    transition: all 200ms linear 50ms;
+}
+
+
+.play {
+    width: 7vw;
+    aspect-ratio: 2/1;
+    margin-top: 3vh;
+    border-radius: 50%;
+    background-color: rgb(255, 0, 0);
+    color: whitesmoke;
+    border: none;
+    transition: all 150ms linear 50ms;
+}
+
+.play:hover{
+    background-color: rgb(250, 58, 58);
+    cursor: pointer;
+    transform: scale(1.25);
+    font-weight: bolder;
+}
+
+

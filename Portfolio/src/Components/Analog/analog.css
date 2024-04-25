@@ -1,0 +1,300 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-image: url("./assets/bg/bg3.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    height: 100vh;
+ 
+    
+}
+
+
+.dc-main-container {
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px -5px 10px whitesmoke;
+    margin-top: 5vh;
+    
+    
+}
+
+.dc-container {
+    height: 40%;
+    min-width: 150px;
+    position: relative;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    margin: 2rem;
+    animation: glow 4s linear 500ms infinite alternate both;
+    opacity: 08;
+    flex-shrink: 0;
+}
+
+.dc {
+    height: 100%;
+    width: 100%;
+    background-image: url("./assets/clock/clock.png");
+    border-radius: 50%;
+    background-size:100% 100%;
+    background-position: center;
+    position: relative;
+    margin: auto;
+    
+
+}
+
+.second-hand {
+    height: 60%;
+    aspect-ratio: 1/20;
+    position: absolute;
+    left: 49.5%;
+    top: 22%;
+    
+    border-radius: 50px 50px 0px 0px;
+    background-image: url("./assets/hand/mint3.png"); 
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.minute-hand {
+
+    height: 60%;
+    aspect-ratio: 1/14;
+    position: absolute;
+    left: 49%;
+    top: 22%;
+    background-image: url("./assets/hand/min-hand.png");
+    background-size: cover;
+    background-position: center;
+   
+  
+}
+
+.mili-sec-hand {
+    height: 30%;
+    aspect-ratio: 1/20;
+    position: absolute;
+    left: 50%;
+    top: 22%;
+    transform-origin: bottom;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    background-color: red;
+    box-shadow: 1px 1px 5px red; 
+    opacity: 0.5;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.start-button {
+    height: 5rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    color: rgb(172, 165, 165);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 1rem;
+    background: none;
+    animation: glow2 4s linear 500ms infinite alternate both;
+    border: none;
+    border: 1px solid whitesmoke;
+}
+
+
+
+.stop-button {
+    height: 5rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    color: rgb(168, 161, 161);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 1rem;
+    background: none;
+    border: none;
+    animation: glow2 4s linear 500ms infinite alternate both;
+    border: 1px solid whitesmoke;
+}
+
+.reset-button {
+    height: 5rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    color: rgb(165, 158, 158);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 1rem;
+    background: none;
+    border: 1px solid whitesmoke;
+    animation: glow2 4s linear 500ms infinite alternate both;
+}
+
+.start-button:hover,
+.stop-button:hover,
+.reset-button:hover,
+.choice:hover,
+.layout-button:hover {
+    color: whitesmoke;
+    transform: scale(1.15);
+    animation-play-state: paused;
+    cursor: pointer;
+    transition: all 100ms linear;
+    opacity: 1;
+}
+
+
+
+
+
+.button-area {
+    display: flex;
+    padding: 0.5rem;
+    position: relative;
+    width: 80%;
+    height: auto;
+    justify-content: space-evenly;
+    border-radius: 25%;
+    box-shadow: -1px -1px 1px  rgb(212, 203, 203) ;
+    margin: 1rem;
+    opacity: 0.5;
+    display: none;
+    position: relative;
+ 
+}
+
+.choice-area {
+   
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 25%;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    box-shadow: -1px -1px 1px  rgb(212, 203, 203) ;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    min-width: 264.5px;
+    opacity: 0.5;
+    
+}
+
+.choice {
+    padding: 1rem;
+    border: none;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background: none;
+    color: rgb(158, 153, 153);
+    border-radius: 50%;
+    border: 1px solid whitesmoke;
+    animation: glow2 4s linear 500ms infinite alternate both;
+}
+
+
+
+
+
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes glow {
+    0% {box-shadow: 0px 0px 20px rgb(253, 1, 1);}
+    25% {box-shadow: 0px 0px 20px rgb(243, 227, 4);}
+    50% {box-shadow: 0px 0px 20px rgb(114, 231, 5);}
+    75% {box-shadow: 0px 0px 20px rgb(3, 245, 245);}
+    100% {box-shadow: 0px 0px 20px rgb(194, 3, 252);}
+}
+
+@keyframes glow2 {
+    0% {box-shadow: 0px 0px 20px rgb(5, 0, 0);}
+    100% {box-shadow: 0px 0px 10px rgb(129, 5, 129);}
+}
+
+
+
+
+
+@keyframes fadeOut {
+    0%{
+        transform: scale(1);
+        display: flex;
+    }
+    
+    100%{
+        opacity: 0;
+        transform: scaleX(0);
+        display: none;
+        box-shadow: 0px 0px 100px whitesmoke;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        transform: scaleX(0);
+        
+        
+    }
+  
+    100% {
+        transform: scaleX(1);
+        opacity: 0.5;
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+.second-hand-animation {
+    animation: rotate 60s linear infinite forwards;
+}
+
+.minute-hand-animation {
+    animation: rotate 3600s linear infinite forwards;
+}
+
+.mili-sec-hand-animation {
+    animation: rotate 1000ms linear infinite forwards;
+}
+
+.pause-animation {
+    animation-play-state: paused;
+}
+
+.play-animation {
+    animation-play-state: running;
+}
+
+
+.hide {
+    animation: fadeOut 500ms cubic-bezier(0, 0, 0, 0.96) 1 forwards;
+}
+.unhide {
+    display: flex;
+    animation: fadeIn 500ms cubic-bezier(0, 0, 0, 0.96) 1 forwards;
+}
+
+
