@@ -1,6 +1,7 @@
 import React, {useRef} from 'react'
 import "./clock.css"
 import { useEffect } from 'react';
+import {bgImg, setImg} from '../global';
 
 function Clock({identity}) {
 
@@ -23,6 +24,9 @@ function Clock({identity}) {
     // useEffect(()=>{
     if(layout.current){
         layout.current.style.backgroundImage = `url(/assets/clock${identity}-${code}.png)`;
+        let path = `url(/assets/clock${identity}-${code}.png)`;
+        setImg(path)
+        
     }
     console.log("done")
     console.log(identity)

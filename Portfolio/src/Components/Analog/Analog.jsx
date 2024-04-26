@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect, useContext } from "react";
 import "./analog.css"
 import Clock from "../Clock-bg/Clock";
+import {bgImg, setImg} from "../global";
 
 
 
@@ -39,7 +40,8 @@ function Analog (){
 
     useEffect (()=>{
 
-        
+        layout.current.style.backgroundImage = bgImg();
+
         timeId = setInterval (()=>{
 
             updateHours(new Date().getHours());
@@ -59,12 +61,12 @@ function Analog (){
 
     function start (){
         console.log(minutes)
-
         if (!animations){
             miliSecHand.current.classList.add("mili-sec-hand-animation");
             secHand.current.classList.add("second-hand-animation");
             minHand.current.classList.add("minute-hand-animation");
             animations = true 
+            
         }
 
 
