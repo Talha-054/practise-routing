@@ -117,6 +117,7 @@ ul li:hover{
     .login-button,
     .sign-button {
         padding: 1.5vw;
+        font-size: 10px;
     }
 
     .member {
@@ -150,7 +151,7 @@ ul li:hover{
     background-color: rgb(21, 255, 0);
     margin: 1vw;
     border-radius: 50%;
-    animation: green 2s linear infinite ;
+    animation: green 1500ms linear infinite 0s both ;
 }
 
 .light2 {
@@ -159,47 +160,29 @@ ul li:hover{
     background-color: red;
     margin: 1vw;
     border-radius: 50%;
-    animation: red 2s linear infinite ;
+    animation: red 1500ms linear infinite 0s both ;
 }
 
 
 
 @keyframes green {
     0%{
-        box-shadow: 0px 0px 5px rgb(0, 255, 0);
+        box-shadow: 0px 0px 0px rgb(0, 255, 0);
     }
 
-    25%{
-        box-shadow: 0px 0px 10px rgb(0, 255, 0);
-    }
-    50%{
-        box-shadow: 0px 0px 30px rgb(0, 255, 0);
-    }
-    75%{
-        box-shadow: 0px 0px 10px rgb(0, 255, 0);
-    }
     100%{
-        box-shadow: 0px 0px 5px rgb(0, 255, 0);
+        box-shadow: 0px 0px 100px rgb(0, 255, 0);
     }
 }
 
 
 @keyframes red {
     0%{
-        box-shadow: 0px 0px 5px red;
+        box-shadow: 0px 0px 0px red;
     }
 
-    25%{
-        box-shadow: 0px 0px 10px red;
-    }
-    50%{
-        box-shadow: 0px 0px 30px red;
-    }
-    75%{
-        box-shadow: 0px 0px 10px red;
-    }
     100%{
-        box-shadow: 0px 0px 5px red;
+        box-shadow: 0px 0px 100px red;
     }
 }
 

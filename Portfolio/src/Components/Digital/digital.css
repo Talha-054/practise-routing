@@ -33,4 +33,10 @@ p {
     }
 }
 
+@media (max-width: 380px){
+    h1 {
+        font-size: 24px;
+    }
+}
+
 
