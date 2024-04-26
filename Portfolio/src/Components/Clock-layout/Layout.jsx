@@ -12,7 +12,7 @@ function Layout() {
     let layoutIcons = useRef(null);
     let layoutButton = useRef(null)
 
-    let [bgNum, setbgNum] = useState("")
+    let [bgNum, setbgNum] = useState(null)
 
     
 
